@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея питомцев</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Основной блок по БЭМ: gallery -->
+    <main class="gallery">
+        <h1 class="gallery__title">Случайные собачки</h1>
+        
+        <!-- Кнопка для запуска загрузки -->
+        <button id="load-btn" class="gallery__btn">Загрузить собачек</button>
+
+        <!-- Лоадер (крутилка), изначально скрыт через CSS -->
+        <div id="loader" class="gallery__loader"></div>
+
+        <!-- Контейнер-сетка, куда JS будет вставлять картинки -->
+        <div id="gallery-grid" class="gallery__grid"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
